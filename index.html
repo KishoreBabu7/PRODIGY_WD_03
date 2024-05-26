@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+      <span id="welcomeText" style="font-size: 4vw;">Welcome to Tic Tac Toe</span><br><br>
+      <p style="color: #ffffff;">Made by: TULUGU KISHORE BABU</p>
+      <br>
+        <div class="modeSelection">
+            <button onclick="startGame('player')">Player vs Player</button>
+            <button onclick="startGame('computer')">Player vs Computer</button>
+        </div>
+        <div class="gameContainer">
+            <div class="box bT bL" id="box1"><span class="boxText"></span></div>
+            <div class="box bT" id="box2"><span class="boxText"></span></div>
+            <div class="box bT bR" id="box3"><span class="boxText"></span></div>
+            <div class="box bL" id="box4"><span class="boxText"></span></div>
+            <div class="box" id="box5"><span class="boxText"></span></div>
+            <div class="box bR" id="box6"><span class="boxText"></span></div>
+            <div class="box bB bL" id="box7"><span class="boxText"></span></div>
+            <div class="box bB" id="box8"><span class="boxText"></span></div>
+            <div class="box bB bR" id="box9"><span class="boxText"></span></div>
+        </div>
+        <div class="gameInfo">
+            <span class="turn">Click on the box to start</span>
+            <br>
+            <br>
+            <button id="restart">Restart</button>
+        </div>
+    </div>
+    <script src="function.js"></script>
+</body>
+</html>

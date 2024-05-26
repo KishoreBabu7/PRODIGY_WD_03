@@ -1,0 +1,131 @@
+/* style.css */
+
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url("https://wallpaperboat.com/wp-content/uploads/2019/10/cool-website-background-01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(1);
+  color: #ffffff;
+}
+
+nav {
+  background: #ffffff;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  color: #0059ff;
+  font-size: 1.2em;
+}
+
+.container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.modeSelection {
+  margin-bottom: 20px;
+}
+
+.modeSelection button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 0 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modeSelection button:hover {
+  background-color: #0056b3;
+}
+
+.gameContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  margin: 0 auto; /* Center the game board horizontally */
+  max-width: 320px; /* Optional: Set a max-width for responsiveness */
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #00000097;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.bT {
+  border-top: 2px solid #007bff;
+}
+
+.bL {
+  border-left: 2px solid #007bff;
+}
+
+.bR {
+  border-right: 2px solid #007bff;
+}
+
+.bB {
+  border-bottom: 2px solid #007bff;
+}
+
+.gameInfo {
+  margin-top: 20px;
+}
+
+.winImg {
+  display: none;
+  width: 150px;
+  margin-top: 20px;
+}
+
+button#restart {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button#restart:hover {
+  background-color: #c82333;
+}
